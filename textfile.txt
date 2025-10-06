@@ -3,3 +3,6 @@
 2. Python Comparison Operators
 
 3. Python Statements
+
+4. Methods and Functions
+    

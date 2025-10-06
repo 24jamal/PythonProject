@@ -1,0 +1,66 @@
+**Lambda Function Challenges**
+1. Square or Cube  
+   - Write a lambda function that returns the square of a number if it is even, and the cube if it is odd.  
+   - Example: 2 → 4, 3 → 27  
+
+2. Sort by Last Digit  
+   - Sort a list of numbers based on their last digit using a lambda function.  
+   - Example: [23, 45, 12, 67] → [12, 23, 45, 67]  
+
+3. Check Divisibility  
+   - Use a lambda function to check if a number is divisible by both 3 and 5.  
+
+---
+
+### **Map() Challenges**
+4. Convert Temperatures  
+   - Convert a list of temperatures from Celsius to Fahrenheit using map().  
+   - Formula: F = C * 9/5 + 32  
+
+5. Length of Words  
+   - Given a list of words ['Python', 'is', 'fun'], use map() to get the length of each word.  
+
+6. Absolute Difference  
+   - Given two lists of numbers [10, 20, 30] and [5, 25, 15], use map() to create a list of absolute differences.  
+
+---
+
+### **Filter() Challenges**
+7. Even Numbers  
+   - Filter out even numbers from a list: [1,2,3,4,5,6,7,8]  
+
+8. Passing Marks  
+   - Given a list of student marks [35, 45, 60, 20, 50], use filter() to get marks ≥ 40.  
+
+9. Vowels Only  
+   - Filter only the vowels from a string: "Programming is fun"  
+
+---
+
+### **Zip() Challenges**
+10. Combine Names and Scores  
+    - Names: ['Alice','Bob','Charlie'], Scores: [85,90,78]  
+    - Use zip() to create a dictionary of name:score  
+
+11. Sum of Pairs  
+    - Two lists: [1,2,3] and [4,5,6]  
+    - Use zip() to create a list of sums of corresponding elements  
+
+12. Multiply and Filter  
+    - Two lists: [1,2,3,4] and [5,6,7,8]  
+    - Multiply corresponding elements using map() + zip()  
+    - Then use filter() to keep only results > 20  
+
+---
+
+### **Combo Challenge (Lambda + Map + Filter + Zip)**
+13. Student Report Card  
+    - Names: ['A', 'B', 'C'], Marks: [55, 35, 80]  
+    - Use zip() to combine names and marks  
+    - Use filter() to select only students who passed (marks ≥ 40)  
+    - Use map() + lambda to convert marks to grade:  
+      - 40–59 → 'C'  
+      - 60–79 → 'B'  
+      - 80–100 → 'A'  
+    
+-----------------------------------------------------------------------
