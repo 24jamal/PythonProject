@@ -1,0 +1,6 @@
+2025-10-20 13:03:36,093  ERROR division by zero
+Traceback (most recent call last):
+  File "c:\Users\jamal\OneDrive\Documents\Courses\LearnbayDevops\PythonCourse\ErrorAndExceptionsHandling\Challenges\LogError.py", line 13, in <module>
+    c = a/b
+        ~^~
+ZeroDivisionError: division by zero

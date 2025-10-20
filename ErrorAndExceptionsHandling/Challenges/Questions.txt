@@ -1,0 +1,86 @@
+
+1. Divide by Zero
+
+   * Write a program that takes two numbers and divides them.
+   * Handle ZeroDivisionError if the denominator is 0.
+
+2. Invalid Input
+
+   * Ask the user for an integer.
+   * If the user enters a non-integer (like text), catch the ValueError and show a message like “Please enter a valid number!”
+
+3. File Not Found
+
+   * Try opening a file (e.g., data.txt).
+   * If the file doesn’t exist, handle FileNotFoundError gracefully and print “File not found!”.
+
+4. List Index Error
+
+   * Ask the user for an index and print the value at that index from a predefined list.
+   * Handle IndexError if the index is out of range.
+
+
+
+ ⚙️ Intermediate Level
+
+5. Multiple Exceptions
+
+   * Write a program that handles both ValueError and ZeroDivisionError in a calculator function.
+   * Use multiple except blocks.
+
+6. Else and Finally
+
+   * Demonstrate a block using try...except...else...finally where:
+
+     * else runs when no error occurs.
+     * finally always runs (e.g., closing a file or cleaning up resources).
+
+7. Nested Try Blocks
+
+   * Create a function that performs a file read operation and a mathematical operation.
+   * Use nested try-except blocks to handle file errors separately from math errors.
+
+8. Custom Exception
+
+   * Create a custom exception class UnderAgeError (as you did earlier).
+   * Raise it if a user’s age is below 18, otherwise print “Access granted.”
+
+
+
+ 🚀 Advanced Level
+
+9. API Error Handling
+
+   * Simulate an API call (you can just use a dictionary lookup).
+   * If the key (endpoint) doesn’t exist, raise and handle a custom APIError.
+
+10. Logging Exceptions
+
+* Use the logging module to log exceptions into a file instead of printing them.
+* Example: log error details with timestamp.
+
+11. Retry Mechanism
+
+* Implement a function that retries a failing operation (e.g., dividing random numbers) up to 3 times before raising an error.
+
+12. Re-raising Exceptions
+
+* Catch an exception, print a custom message, and re-raise it for higher-level handling.
+
+13. Error Handling in a Class
+
+* Create a class BankAccount with withdraw() and deposit() methods.
+* Raise a ValueError if withdrawal exceeds balance, and handle it inside or outside the class.
+
+14. Context Manager Exception Handling
+
+* Use a custom context manager (with __enter__ and __exit__) to handle exceptions when working with a file or resource.
+
+
+
+ 🧠 Bonus Challenge
+
+15. Error Handling Decorator
+
+* Create a decorator @handle_exceptions that automatically catches and prints any exceptions that occur in the decorated function.
+
