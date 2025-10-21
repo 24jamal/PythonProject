@@ -1,0 +1,30 @@
+2025-10-20 21:22:16,899 DEBUG Inside Decorator Function 
+2025-10-20 21:22:16,900 DEBUG Inside Wrapper Function 
+2025-10-20 21:22:16,900 INFO Arguments : (2, 4) || Key words arguments : {}  
+2025-10-20 21:22:16,900 DEBUG End of Wrapper function 
+2025-10-20 21:24:48,730 DEBUG Inside Decorator Function 
+2025-10-20 21:24:48,732 DEBUG Inside Wrapper Function 
+2025-10-20 21:24:48,732 INFO Arguments : (2, 4) || Key words arguments : {}  
+2025-10-20 21:24:48,733 DEBUG End of Wrapper function 
+2025-10-20 21:24:48,733 DEBUG Inside Decorator Function 
+2025-10-20 21:24:48,733 DEBUG Inside Wrapper Function 
+2025-10-20 21:24:48,733 INFO Arguments : (1, 2, 3) || Key words arguments : {'d': 'Chennai', 'e': 'Jamal'}  
+2025-10-20 21:24:48,733 DEBUG End of Wrapper function 
+2025-10-20 21:41:42,259 WARNING  End of time_taken_decorator() function
+2025-10-20 21:41:42,261 DEBUG  Inside Wrapper function
+2025-10-20 21:41:52,388 INFO  Execution time of justloop is : 10.1275
+2025-10-20 21:41:52,388 INFO  Arguments : () || Key word Arguments : {}
+2025-10-20 21:41:52,388 INFO  End of wrapper
+2025-10-20 21:42:35,550 WARNING  End of time_taken_decorator() function
+2025-10-20 21:42:35,551 DEBUG  ----------------------------
+2025-10-20 21:42:35,551 DEBUG  Inside Wrapper function
+2025-10-20 21:42:45,683 INFO  Execution time of justloop is : 10.1311
+2025-10-20 21:42:45,683 INFO  Arguments : () || Key word Arguments : {}
+2025-10-20 21:42:45,683 INFO  End of wrapper
+2025-10-21 10:04:34,316 DEBUG Attempt No : 1
+2025-10-21 10:04:34,317 ERROR Attempt failed no : 1
+2025-10-21 10:04:35,318 DEBUG Attempt No : 2
+2025-10-21 10:04:35,318 ERROR Attempt failed no : 2
+2025-10-21 10:04:36,319 DEBUG Attempt No : 3
+2025-10-21 10:04:36,319 ERROR Attempt failed no : 3
+2025-10-21 10:04:36,319 ERROR Total Attempts reached : 3

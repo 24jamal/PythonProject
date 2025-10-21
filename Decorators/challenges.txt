@@ -1,0 +1,175 @@
+🧠 LEVEL 1: Concept Reinforcement
+
+ 1️⃣ Logging Decorator
+
+Write a decorator `@log_call` that:
+
+* Logs function name, arguments, and return value to a file (`log.txt`).
+* Adds timestamps.
+
+🔹 Challenge: Handle both positional and keyword arguments dynamically.
+
+
+
+ 2️⃣ Timing Decorator
+
+Write a decorator `@timing` that measures the time taken by a function to execute and prints it.
+
+🔹 Challenge:
+
+* Handle async functions (`async def`) too.
+* Show both seconds and milliseconds.
+
+
+
+ 3️⃣ Repeat Decorator
+
+Create a decorator `@repeat(n)` that repeats a function n times and returns the last result.
+
+python
+@repeat(3)
+def greet():
+    print("Hello")
+
+
+Output:
+
+
+Hello
+Hello
+Hello
+
+
+🔹 Challenge: Make `n` optional with a default value of 2.
+
+
+
+ ⚙️ LEVEL 2: Functional Logic
+
+ 4️⃣ Authorization Decorator
+
+Simulate a login system:
+
+python
+@requires_role("admin")
+def delete_user():
+    print("User deleted")
+
+
+🔹 Challenge:
+
+* Check a global variable like `current_user = {"role": "user"}`.
+* Raise a custom `PermissionError` if the role doesn’t match.
+
+
+
+ 5️⃣ Retry Decorator
+
+Create a decorator `@retry(times=3)` that retries a failing function (raises exception) up to 3 times before giving up.
+
+🔹 Challenge:
+
+* Add an optional delay between retries using `time.sleep()`.
+* Log attempts.
+
+
+
+ 💡 LEVEL 3: Advanced Use Cases
+
+ 6️⃣ Cache / Memoization Decorator
+
+Write a `@cache` decorator that stores previous results in a dictionary to speed up repeated calls.
+
+🔹 Challenge:
+
+* Support functions with multiple arguments (`*args`, `kwargs`).
+* Handle unhashable arguments (like lists) gracefully.
+
+
+
+ 7️⃣ Decorator with Arguments + Metadata
+
+Write a decorator that:
+
+* Takes a custom message as an argument.
+* Prints it before executing the function.
+* Preserves the original function’s name and docstring (use `functools.wraps`).
+
+Example:
+
+python
+@announce("Starting calculation")
+def add(a, b):
+    """Adds two numbers"""
+    return a + b
+
+
+
+
+ 🧩 LEVEL 4: Context + Decorator Combo
+
+ 8️⃣ Combine Context Manager & Decorator
+
+Create a class that can be used both as:
+
+python
+@timeblock
+def process():
+    ...
+
+
+and
+
+python
+with timeblock():
+    ...
+
+
+It should measure execution time in both cases.
+
+
+
+ 🚀 LEVEL 5: Real-World Challenge
+
+ 9️⃣ Rate Limiter Decorator
+
+Limit how often a function can be called.
+Example:
+
+python
+@rate_limit(calls=3, per_seconds=5)
+def api_call():
+    print("API called")
+
+
+🔹 Challenge:
+
+* If called too often, raise a custom `RateLimitError`.
+* Use `time.time()` internally to track calls.
+
+
+
+ 🔟 Validate Data Decorator
+
+Write a decorator `@validate_json` that:
+
+* Takes a schema (dictionary) of required keys.
+* Checks if the input dict passed to the function matches the schema.
+
+Example:
+
+python
+@validate_json({"name": str, "age": int})
+def process_data(data):
+    print("Valid data:", data)
+
+
+Raise a `ValueError` for missing or invalid keys.
+
+
+
+ 🏆 BONUS: Meta Decorator
+
+ 11️⃣ Decorator for Decorators 😈
+
+Write a decorator `@ensure_wrapped` that automatically applies `functools.wraps()` to any decorator function passed into it — so all your decorators automatically preserve function metadata.
