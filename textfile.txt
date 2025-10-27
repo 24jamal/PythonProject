@@ -5,4 +5,15 @@
 3. Python Statements
 
 4. Methods and Functions
-    
+
+5. OOPS 
+
+6. Modules and Packages
+
+7. Errors and Exception handling
+
+8. Decorators
+
+9. Generators
+
+10. Advanced Python Modules
